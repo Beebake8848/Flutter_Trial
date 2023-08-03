@@ -15,6 +15,9 @@ class HomePage extends StatelessWidget {
           "assets/images/home1.png",
           fit: BoxFit.cover,
         ),
+        const SizedBox(
+          height: 20.0,
+        ),
         GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, "/login");
