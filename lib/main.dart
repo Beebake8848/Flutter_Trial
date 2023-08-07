@@ -22,7 +22,13 @@ class MyApp extends StatelessWidget {
 
       theme: ThemeData(
           primaryTextTheme: GoogleFonts.latoTextTheme(),
-          primarySwatch: Colors.amber),
+          primarySwatch: Colors.amber,
+          appBarTheme: AppBarTheme(
+            color: Colors.white,
+            elevation: 0.0,
+            iconTheme: const IconThemeData(color: Colors.black),
+            titleTextStyle: Theme.of(context).textTheme.bodyLarge,
+          )),
       initialRoute: "/home",
       routes: {
         "/": (context) => const LoginPage(),

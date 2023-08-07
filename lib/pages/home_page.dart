@@ -9,7 +9,9 @@ class HomePage extends StatelessWidget {
     String name = "Everyone";
     return Scaffold(
       appBar: AppBar(
-        title: const Text("First One"),
+        title: const Text(
+          "First One",
+        ),
       ),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Image.asset(
